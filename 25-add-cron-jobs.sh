@@ -13,8 +13,7 @@ case "$(ubnt-device-info firmware || true)" in
     exit 1
     ;;
 esac
-## Store crontab files in ${DATA_DIR}/cronjobs/ (you will need to create this fo
-lder).
+## Store crontab files in ${DATA_DIR}/cronjobs/ (you will need to create this folder).
 ## This script will re-add them on startup.
 
 cp ${DATA_DIR}/cronjobs/* /etc/cron.d/
